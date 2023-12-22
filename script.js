@@ -41,7 +41,7 @@ function handleCellClick(clickedCell, clickedCellIndex) {
     endGame('tie');
   } else {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    document.querySelector('.status').textContent = `Player ${currentPlayer}'s turn`;
+    document.querySelector('.status').textContent = `Player ${currentPlayer}'s Turn`;
 
     if (currentPlayer === 'O') {
       const centerCell = document.querySelector('.cell:nth-child(5)');
@@ -56,7 +56,7 @@ function handleCellClick(clickedCell, clickedCellIndex) {
 
 function endGame(result) {
   gameActive = false;
-  let message = result === 'tie' ? "It's a Tie!" : `Player ${result} wins!`;
+  let message = result === 'tie' ? "It's a Tie!" : `Player ${result} Wins!`;
 
   document.querySelector('.status').textContent = message;
 }
