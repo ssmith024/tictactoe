@@ -1,5 +1,3 @@
-/* Tic Tac Toe Styles */
-
 
 h1 {
   text-align: center;
@@ -7,17 +5,14 @@ h1 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Add this to your styles.css file */
+
 .game-board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-gap: 5px;
-  margin: 20px auto; /* Centers the grid horizontally */
+  margin: 20px auto; 
   width: 300px;
 }
-
-/* Other existing styles... */
-
 
 .cell {
   display: flex;
