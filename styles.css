@@ -1,0 +1,38 @@
+/* Tic Tac Toe Styles */
+
+
+h1 {
+  text-align: center;
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Add this to your styles.css file */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto; /* Centers the grid horizontally */
+  width: 300px;
+}
+
+/* Other existing styles... */
+
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  color: blue;
+  font-size: 2em;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: red;
+}
